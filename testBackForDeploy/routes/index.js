@@ -91,6 +91,7 @@ router
     }
   })
 
+
   router.get("/logout", (req, res) => {
     res.clearCookie('UserToken'); // Cookie ka naam jo aapne set kiya hai use yahaan specify karein
     res.redirect('/'); // Logout ke baad user ko kisi specific page par redirect kar sakte hain
